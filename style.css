@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+#logo{
+ clip-path: polygon(0 0, 100% 0%, 100% 50%, 50% 100%, 1% 50%);
+ 
+}
+
+body{
+    overflow-x:hidden ;
+}
+*{
+    box-sizing: border-box;
+}
+
+#one{
+  margin-top:100px;
+  justify-content: center;
+  align-items: center;
+}
+
+#two{
+    margin-top:-60px;
+}
+.navbar{
+    margin-top:-10px;
+}
+.yellow{
+    color:#FFDA00;
+}
+
+.shape{
+    background-color: #FFDA00;
+    clip-path: polygon(0% 0%, 100% 0, 100% 100%, 50% 80%, 0% 100%);
+    height:200px;
+    width:150px;
+}
+.shape2{
+    clip-path: polygon(0% 0%, 100% 0, 100% 90%, 50% 70%, 0 90%);
+    background-color: #03245c;
+    height:190px;
+
+}
+
+.box{
+    align-items:center;
+    justify-content: center;
+    border-radius:10px;
+    box-shadow:2px 4px 5px rgba(0,0,0,0.3);
+    transform : translateX(400%);
+    transition: transform 0.4s ease;
+    background-color: #03245c;
+    color:black;
+}
+
+.box1{
+    clip-path: polygon(0% 0%, 100% 0, 100% 60%, 60% 100%, 0% 100%);
+    background-color: #FFDA00;
+    height: 180px;
+}
+
+.box.show{
+    transform :translateX(0);
+}
+
+.service{
+    padding:20px;
+    font-size: 50px;
+}
+
+.box h3{
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.shape h1,h3{
+    text-align: center;
+    align-items: center;
+    padding-top: 50px;
+    color:white;
+}
+
+
+
+/* figma animation */
+
+#human1{
+    animation: body 1s ease;
+    
+}
+
+#verified{
+    animation : tick 4s ease-in;
+}
+
+@keyframes body{
+   from{
+    transform: translateX(30px);
+   }to{
+    transform: translateX(130px);
+    }
+}
+
+@keyframes tick{
+    from {
+        transform: translateX(70px);
+    }
+    to{
+        transform: translateX(10px);
+    }
+    
+}
+  
+
+/* responsiveness */
+
+@media only screen and (max-width: 600px) {
+    #one{
+        margin-top:10px;
+        text-align: center;
+    }
+   
+    svg{
+        margin-top:30px;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        height:80%;
+    }
+    .box{
+        width:70%;
+        margin:50px;
+       
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .col-4{
+     
+        margin-bottom:20px;
+    }
+   
+}
+
